@@ -181,7 +181,7 @@ ex -sc '1pu_|x' /etc/credentials.txt
 ex -s -c '1i|username=sim' -c x /etc/credentials.txt
 ex -s -c '2i|password=sim' -c x /etc/credentials.txt
 sed -i '/^[[:space:]]*$/d' /etc/credentials.txt
-echo '//192.168.31.35/SHARE /home/SHARE cifs credentials=/etc/credentials.txt,rw,guest,iocharset=utf8,file_mode=0777,dir_mode=0777,noperm,nosetuids,x-systemd.automount 0 0' >> /etc/fstab
+echo '//4.4.4.4/SHARE /home/SHARE cifs credentials=/etc/credentials.txt,rw,guest,iocharset=utf8,file_mode=0777,dir_mode=0777,noperm,nosetuids,x-systemd.automount 0 0' >> /etc/fstab
 
 # INSTALL Visual Studio Code VCODE
 
